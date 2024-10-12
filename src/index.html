@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+    <meta charset="UTF-8" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <body>
+        <div id="box" class="box">
+            <p id="timezone" class="timezone"></p>
+            <img
+                src="pictures/pen-logo.png"
+                alt="pen-logo"
+                id="modal-open"
+                class="pen-logo"
+                data-micromodal-trigger="modal-1"
+            />
+            <p id="time" class="time"></p>
+            <p id="date" class="date"></p>
+        </div>
+        <!-- [1] -->
+        <div id="modal-1" class="modal" aria-hidden="true">
+            <!-- [2] -->
+            <div tabindex="-1" data-micromodal-close class="modal__overlay">
+                <!-- [3] -->
+                <div
+                    role="dialog"
+                    aria-modal="true"
+                    aria-labelledby="modal-1-title"
+                    class="dialog"
+                >
+                    <header class="modal-header">
+                        <h2 id="modal-1-title">Change Timezone</h2>
+
+                        <div id="modal-1-content">
+                            <div class="dropdown" id="dropdown">
+                                <select id="dropdownSelect">
+                                    <option
+                                        value="America/Los_Angeles"
+                                        id="timeZ"
+                                    >
+                                        America/Los_Angeles
+                                    </option>
+                                    <option value="America/New_York" id="timeZ">
+                                        America/New_York
+                                    </option>
+                                    <option value="Asia/Shanghai" id="timeZ">
+                                        Asia/Shanghai
+                                    </option>
+                                    <option value="Asia/Tokyo" id="timeZ">
+                                        Asia/Tokyo
+                                    </option>
+                                    <option value="Europe/Kyiv" id="timeZ">
+                                        Europe/Kyiv
+                                    </option>
+                                    <option value="Europe/Lisbon" id="timeZ">
+                                        Europe/Lisbon
+                                    </option>
+                                    <option value="Europe/Prague" id="timeZ">
+                                        Europe/Prague
+                                    </option>
+                                </select>
+                            </div>
+                            <button
+                                onclick="changeTime()"
+                                id="modal-close"
+                                aria-label="Close modal"
+                                data-micromodal-close
+                                id="applyBtn"
+                                class="applyBtn"
+                            >
+                                Apply
+                            </button>
+                        </div>
+                    </header>
+                </div>
+            </div>
+        </div>
+
+        <script type="module" src="js/script.js"></script>
+    </body>
+</html>

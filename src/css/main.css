@@ -1,0 +1,148 @@
+* {
+    background-color: #ebebeb;
+}
+
+.box {
+    border: 5px solid black;
+    border-radius: 8px;
+    text-align: center;
+    height: 350px;
+    position: absolute;
+    width: 600px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    box-shadow: 8px 8px 5px lightgray;
+}
+
+/* Pen logo */
+
+.pen-logo {
+    width: 40px;
+    float: right;
+    margin-top: 70px;
+    margin-left: 100px;
+}
+.pen-logo:hover {
+    cursor: pointer;
+}
+
+/* Dayjs */
+
+.time {
+    text-align: center;
+    font-size: 75px;
+    padding: 0;
+    margin-top: 130px;
+}
+
+.timezone {
+    font-size: 20px;
+    padding: 0;
+    width: 300px;
+    margin-left: 150px;
+    position: absolute;
+    margin-top: 80px;
+    text-align: right;
+    padding: 5px;
+}
+
+.date {
+    font-size: 20px;
+    padding-top: -200px;
+    width: 300px;
+    margin-left: 150px;
+    margin-top: -50px;
+    text-align: right;
+    padding: 5px;
+}
+
+/* MicroModal */
+
+.modal {
+    display: none;
+}
+
+.modal.is-open {
+    display: block;
+}
+
+.dialog {
+    text-align: center;
+    border-radius: 10px;
+}
+
+.modal__overlay {
+    background: rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 350px;
+    position: absolute;
+    width: 600px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.modal-header {
+    padding: 10px;
+    width: 400px;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+select {
+    border: 2px solid black;
+    border-radius: 6px;
+    width: 300px;
+    padding: 7px;
+    font-size: 17px;
+}
+
+/* Dropdown */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown option {
+    background-color: black;
+    cursor: pointer;
+    padding: 12px 16px;
+    text-decoration: none;
+    color: black;
+    display: block;
+    width: 200px;
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(227, 227, 227, 0.8);
+}
+
+.applyBtn {
+    border: none;
+    cursor: pointer;
+    font-size: 17px;
+    margin-left: 12px;
+}
+
+select option {
+    background-color: black;
+}
